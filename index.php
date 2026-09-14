@@ -10,7 +10,16 @@
 <?php
 
  echo "<h1>Aula DS do SENAI</h1>";
+$nome = "Gustavo";
+echo "<h1>Olá, $Gustavo</h1>";
+$nome = "Gustavo";
+$idade = "16";
 
  ?>
+
+ <h1>nome: "Gustavo" <?= $nome ?></h1>
+ <p>idade: "16" <?= $idade ?></p>
+
+
 </body>
 </html>
