@@ -16,13 +16,13 @@ $idade = 16;
 
 <h1>Nome: <?= $nome ?></h1>
 <p>Idade: <?= $idade ?></p>
-
+<p>status <?= $status ?></p>
 <?php
 
 if ($idade >= 18) {
-    $Status = "Você é maior de idade";
+    $status = "Você é maior de idade";
 } else {
-    $Status = "Você é menor de idade";
+    $status = "Você é menor de idade";
 }
 
 ?>
