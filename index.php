@@ -20,7 +20,7 @@ if ($idade >= 18) {
 
 <h1>Nome: <?= $nome ?></h1> 
 <p>Idade: <?= $idade ?></p> 
-<p>Status: <?= $status ?></p>
+<p>status: <?= $status ?></p>
 
 
 </body>
