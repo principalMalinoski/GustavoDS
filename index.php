@@ -22,12 +22,6 @@ if ($idade >= 18) {
 <p>Idade: <?= $idade ?></p> 
 <p>status: <?= $status ?></p>
 
-<div class="card">
-    <h1>Nome: <?= $nome ?></h1> 
-    <p>Idade: <?= $idade ?></p> 
-    <p>Status: <?= $status ?></p>
-</div>
-
 </body>
 
 
