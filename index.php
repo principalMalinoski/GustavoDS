@@ -10,7 +10,7 @@
 <?php
 
 $nome = "Gustavo";
-$idade = 19;
+$idade = 16;
 
 ?>
 
