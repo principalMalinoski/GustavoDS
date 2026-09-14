@@ -15,8 +15,8 @@ $idade = "16";
 
  ?>
 
- <h1>nome: "Gustavo" <?= $nome ?></h1>
- <p>idade: "16" <?= $idade ?></p>
+ <h1>nome: <?= $nome ?></h1>
+ <p>idade: <?= $idade ?></p>
 
 
 </body>
