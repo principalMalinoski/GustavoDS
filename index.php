@@ -1,3 +1,21 @@
+<?php
+
+$nome = "Gustavo";
+
+
+if (isset($_GET['idade']) && $_GET['idade'] !== '') {
+    $idade = intval($_GET['idade']);
+} else {
+    $idade = 16; 
+}
+
+
+if ($idade >= 18) {
+    $status = "Você é maior de idade";
+} else {
+    $status = "Você é menor de idade";
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,37 +24,18 @@
     <title>AULAS DS</title>
 </head>
 <body>
-<?php 
 
-$nome = "Gustavo"; 
-$idade = 16; 
+   
+    <h1>Nome: <?= htmlspecialchars($nome) ?></h1>
+    <p>Idade: <?= $idade ?></p>
+    <p>Status: <?= $status ?></p>
 
-if ($idade >= 18) { 
-    $status = "Você é maior de idade"; 
-} else { 
-    $status = "Você é menor de idade"; 
-} 
-?>
-
-<h1>Nome: <?= $nome ?></h1> 
-<p>Idade: <?= $idade ?></p> 
-<p>status: <?= $status ?></p>
-
-<form> 
-
-<form action="formulario" method="get">
-  <label for="idade">Idade:</label>
-  <input type="text" id="idade" name="idade">
-  <button type="submit">Enviar</button>
-</form>
-
-
-
-</form>
-
-
+   
+    <form action="" method="get">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" required>
+        <button type="submit">Enviar</button>
+    </form>
 
 </body>
-
-
 </html>
