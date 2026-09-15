@@ -1,20 +1,22 @@
-<?php
+<?php 
 
-$nome = "Gustavo";
+$nome = ""; 
+$idade = 0; 
+$resultado="";
+
+    if ($_SERVER["REQUEST_METHOD"]== "POST") {
+        $nome = $_POST["nome"];
+        $idade = $_POST["idade"];
+     
+    
+        if ($idade >= 18) { 
+            $resultado = "Você é maior de idade"; 
+        } else { 
+            $resultado = "Você é menor de idade"; 
+        } 
 
 
-if (isset($_GET['idade']) && $_GET['idade'] !== '') {
-    $idade = intval($_GET['idade']);
-} else {
-    $idade = 16; 
-}
-
-
-if ($idade >= 18) {
-    $status = "Você é maior de idade";
-} else {
-    $status = "Você é menor de idade";
-}
+     } // O IF ESTÁ PERGUNTANDO SE O FORMULÁRIO TEM METODO DE POST //
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,17 +27,25 @@ if ($idade >= 18) {
 </head>
 <body>
 
-   
-    <h1>Nome: <?= htmlspecialchars($nome) ?></h1>
-    <p>Idade: <?= $idade ?></p>
-    <p>Status: <?= $status ?></p>
+<h2>ATUALIZAR CADASTRO</h2>
 
-   
-    <form action="" method="get">
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" min="0" required>
-        <button type="submit">Enviar</button>
-    </form>
+<form method="POST">
+
+<div>
+<label for="idade">Idade:</label> 
+    <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade"> 
+    <button type="button" onclick="verificarMaioridade()">Enviar</button>
+    <button type="submit">ATUALIZAR IDADE</button> 
+</div>
+
+</form>
+
+<?php if ($resultado != "") { ?>
+
+<?php } ?>
 
 </body>
+
+
+
 </html>
