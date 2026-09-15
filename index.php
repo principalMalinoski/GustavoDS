@@ -31,6 +31,8 @@ if ($idade >= 18) {
 <label for="nome">Idade:</label>
 
   <input type="text" id="nome" name="nome">
+  
+  <button type="submit">Enviar</button>
 
 
 </form>
