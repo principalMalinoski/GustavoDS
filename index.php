@@ -29,11 +29,6 @@ if ($idade >= 18) {
   <input type="text" id="idade" name="idade">
   <button type="submit">Enviar</button>
 </form>
-<form action="formulario" method="post">
-  <label for="idade">Idade:</label>
-  <input type="text" id="idade" name="idade">
-  <button type="submit">Enviar</button>
-</form>
 
 
 
