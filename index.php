@@ -2,52 +2,62 @@
 
 $nome = ""; 
 $idade = 0; 
-$resultado="";
+$resultado = "";
 
-    if ($_SERVER["REQUEST_METHOD"]== "POST") {
-        $nome = $_POST["nome"];
-        $idade = $_POST["idade"];
-     
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $idade = $_POST["idade"];
     
-        if ($idade >= 18) { 
-            $resultado = "Você é maior de idade"; 
-        } else { 
-            $resultado = "Você é menor de idade"; 
-        } 
+    if ($idade >= 18) { 
+        $resultado = "Você é maior de idade"; 
+    } else { 
+        $resultado = "Você é menor de idade"; 
+    } 
+}
 
-
-     } // O IF ESTÁ PERGUNTANDO SE O FORMULÁRIO TEM METODO DE POST //
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AULAS DS</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULAS DS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    </head>
-    <body>
+<body>
 
-        <h2>ATUALIZAR CADASTRO</h2>
+    <h2>ATUALIZAR CADASTRO</h2>
 
-        <form method="POST">
+    <form method="POST">
 
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" min="0" placeholder="Digite sua idade"> 
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade"> 
-                <button type="button" onclick="verificarMaioridade()">Enviar</button>
-                <button type="submit">ATUALIZAR IDADE</button> 
-            </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                placeholder="Digite seu nome"
+            >
 
-        </form>
+            <label for="idade">Idade:</label>
+            <input 
+                type="number" 
+                id="idade" 
+                name="idade" 
+                min="0" 
+                placeholder="Digite sua idade"
+            >
 
-        <?php if ($resultado != "") { ?>
+            <button type="submit">ENVIAR</button>
+        </div>
+
+    </form>
+
+    <?php if ($resultado != "") { ?>
             
-        <?php } ?>
+            <?php } ?>
 
-    </body>
+</body>
 </html>
