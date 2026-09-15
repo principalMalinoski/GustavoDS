@@ -39,7 +39,7 @@ $resultado="";
                 <label for="idade">Idade:</label>
                 <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade"> 
                 <button type="button" onclick="verificarMaioridade()">Enviar</button>
-                <button type="submit">ATUALIZAR IDADE</button> 
+            
             </div>
 
         </form>
