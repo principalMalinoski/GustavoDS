@@ -20,32 +20,31 @@ $resultado="";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AULAS DS</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AULAS DS</title>
+    </head>
+    <body>
 
-<h2>ATUALIZAR CADASTRO</h2>
+        <h2>ATUALIZAR CADASTRO</h2>
 
-<form method="POST">
+        <form method="POST">
 
-<div>
-<label for="idade">Idade:</label> 
-    <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade"> 
-    <button type="button" onclick="verificarMaioridade()">Enviar</button>
-    <button type="submit">ATUALIZAR IDADE</button> 
-</div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" min="0" placeholder="Digite sua idade"> 
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade"> 
+                <button type="button" onclick="verificarMaioridade()">Enviar</button>
+                <button type="submit">ATUALIZAR IDADE</button> 
+            </div>
 
-</form>
+        </form>
 
-<?php if ($resultado != "") { ?>
+        <?php if ($resultado != "") { ?>
+            
+        <?php } ?>
 
-<?php } ?>
-
-</body>
-
-
-
+    </body>
 </html>
