@@ -28,7 +28,7 @@ if ($idade >= 18) {
 
 <form action="formulario" action="post"></form>
 
-<label for="nome">Nome:</label>
+<label for="nome">Idade:</label>
 
   <input type="text" id="nome" name="nome">
 
