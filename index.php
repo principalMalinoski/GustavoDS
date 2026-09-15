@@ -25,7 +25,6 @@ $resultado="";
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AULAS DS</title>
         <link rel="stylesheet" href="css/style.css">
-    
     </head>
     <body>
 
@@ -39,7 +38,7 @@ $resultado="";
                 <label for="idade">Idade:</label>
                 <input type="number" id="idade" name="idade" min="0" placeholder="Digite sua idade"> 
                 <button type="button" onclick="verificarMaioridade()">Enviar</button>
-            
+                <button type="submit">ATUALIZAR IDADE</button> 
             </div>
 
         </form>
