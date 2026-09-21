@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="idade.php">Verificador de idade</a>
+    
 </body>
 </html>
