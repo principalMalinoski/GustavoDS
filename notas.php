@@ -44,6 +44,16 @@ if ($media >= 7) {
     <label for="idade">Idade</label>
     <input type="number" id="idade" name="idade" min"0" required>
 
+    <label for="nota1">Nota 1 (peso 2)</label>
+     <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.01" required>
+ 
+     <label for="nota2">Nota 2 (peso 3)</label>
+     <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.01" required>
+ 
+    <label for="nota3">Nota 3 (peso 1)</label>
+    <input type="number" id="nota3" name="nota3" min="0" max="10" step="0.01" required>
+
+    
 
 
 
