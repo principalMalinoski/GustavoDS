@@ -45,19 +45,19 @@ if ($media >= 7) {
     <input type="number" id="idade" name="idade" min="0" required>
 
     <label for="nota1">Nota 1 (peso 2)</label>
-     <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.01" required>
+     <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.1" required>
  
      <label for="nota2">Nota 2 (peso 3)</label>
-     <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.01" required>
+     <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.1" required>
  
     <label for="nota3">Nota 3 (peso 1)</label>
-    <input type="number" id="nota3" name="nota3" min="0" max="10" step="0.01" required>
+    <input type="number" id="nota3" name="nota3" min="0" max="10" step="0.1" required>
 
      <label for="nota4">Nota 4 (peso 1)</label>
-        <input type="number" id="nota4" name="nota4" min="0" max="10" step="0.01" required>
+        <input type="number" id="nota4" name="nota4" min="0" max="10" step="0.1" required>
  
         <label for="nota5">Nota 5 (peso 3)</label>
-        <input type="number" id="nota5" name="nota5" min="0" max="10" step="0.01" required>
+        <input type="number" id="nota5" name="nota5" min="0" max="10" step="0.1" required>
 
              <button type="submit">Enviar</button>
     </form>
