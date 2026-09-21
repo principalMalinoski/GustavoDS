@@ -35,6 +35,44 @@ if ($media >= 7) {
     <title>Situação Final do Aluno (GET)</title>
 </head>
 <body>
-    <h1>Cadastro de Aluno</h1>
+    <h1>Cadastro de Aluno (GET)</h1>
 
-    
+    <form method="POST" action="notas.php">
+    <label for="nome">Nome do Aluno</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="idade">Idade</label>
+    <input type="number" id="idade" name="idade" min="0" required>
+
+    <label for="nota1">Nota 1 (peso 2)</label>
+     <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.01" required>
+ 
+     <label for="nota2">Nota 2 (peso 3)</label>
+     <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.01" required>
+ 
+    <label for="nota3">Nota 3 (peso 1)</label>
+    <input type="number" id="nota3" name="nota3" min="0" max="10" step="0.01" required>
+
+     <label for="nota4">Nota 4 (peso 1)</label>
+        <input type="number" id="nota4" name="nota4" min="0" max="10" step="0.01" required>
+ 
+        <label for="nota5">Nota 5 (peso 3)</label>
+        <input type="number" id="nota5" name="nota5" min="0" max="10" step="0.01" required>
+
+             <button type="submit">Enviar</button>
+    </form>
+ 
+    <?php if ($exibirResultado): ?>
+        <div class="resultado">
+            <h2>Resultado</h2>
+            <p><strong>Nome:</strong> <?= htmlspecialchars($nome) ?></p>
+            <p><strong>Idade:</strong> <?= $idade ?> anos</p>
+            <p><strong>Média:</strong> <?= number_format($media, 2, ",", ".") ?></p>
+            <p><strong>Situação:</strong> <?= $situacao ?></p>
+        </div>
+    <?php endif; ?>
+
+
+    </form>
+</body>
+</html>
