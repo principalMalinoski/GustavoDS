@@ -35,6 +35,22 @@ if ($media >= 7) {
     <title>Situação Final do Aluno (POST)</title>
 </head>
 <body>
-    
+    <h1>Cadastro de Aluno</h1>
+
+    <form method="POST" action="notas.php">
+    <label for="nome">Nome do Aluno</label>
+    <input type="text" id="nome" name="nome" required>
+
+
+
+
+
+
+
+
+
+
+
+    </form>
 </body>
 </html>
