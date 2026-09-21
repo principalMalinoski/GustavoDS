@@ -25,5 +25,5 @@ if ($media >= 7) {
     }
  
     $exibirResultado = true;
-
 }
+?>
