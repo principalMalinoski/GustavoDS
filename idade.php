@@ -56,8 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 
     <?php if ($resultado != "") { ?>
-            
-            <?php } ?>
+    <p><strong>Nome:</strong> <?= htmlspecialchars($nome) ?></p>
+    <p><strong>Idade:</strong> <?= $idade ?></p>
+    <p><strong>Status:</strong> <?= $resultado ?></p>
+<?php } ?> 
 
 </body>
 </html>
