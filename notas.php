@@ -16,6 +16,14 @@ $nota5 = (float) ($_POST["nota5"] ?? 0):
 
 $media = ($nota1 * 2 + $nota2 * 3 + $nota3 * 1 + $nota4 * 1 + $nota5 * 3) / 10;
 
-
+if ($media >= 7) {
+        $situacao = "APROVADO";
+    } elseif ($media >= 5) {
+        $situacao = "RECUPERAÇÃO";
+    } else {
+        $situacao = "REPROVADO";
+    }
+ 
+    $exibirResultado = true;
 
 }
