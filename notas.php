@@ -59,6 +59,14 @@ if ($media >= 7) {
         <label for="nota5">Nota 5 (peso 3)</label>
         <input type="number" id="nota5" name="nota5" min="0" max="10" step="0.01" required>
 
+             <button type="submit">Enviar</button>
+    </form>
+ 
+    <?php if ($exibirResultado): ?>
+        <div class="resultado">
+            <h2>Resultado</h2>
+            <p><strong>Nome:</strong> <?= htmlspecialchars($nome) ?></p>
+
 
 
 
