@@ -53,7 +53,11 @@ if ($media >= 7) {
     <label for="nota3">Nota 3 (peso 1)</label>
     <input type="number" id="nota3" name="nota3" min="0" max="10" step="0.01" required>
 
-    
+     <label for="nota4">Nota 4 (peso 1)</label>
+        <input type="number" id="nota4" name="nota4" min="0" max="10" step="0.01" required>
+ 
+        <label for="nota5">Nota 5 (peso 3)</label>
+        <input type="number" id="nota5" name="nota5" min="0" max="10" step="0.01" required>
 
 
 
