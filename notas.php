@@ -66,14 +66,11 @@ if ($media >= 7) {
         <div class="resultado">
             <h2>Resultado</h2>
             <p><strong>Nome:</strong> <?= htmlspecialchars($nome) ?></p>
-
-
-
-
-
-
-
-
+            <p><strong>Idade:</strong> <?= $idade ?> anos</p>
+            <p><strong>Média:</strong> <?= number_format($media, 2, ",", ".") ?></p>
+            <p><strong>Situação:</strong> <?= $situacao ?></p>
+        </div>
+    <?php endif; ?>
 
 
     </form>
