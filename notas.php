@@ -43,6 +43,14 @@ if ($media >= 7) {
 <body>
     <h1>Cadastro de Aluno</h1>
 
+
+<?php if (!empty($mensagemErro)): ?>
+    <div style="color: red; font-weight: bold; margin-bottom: 20px;">
+        <?= $mensagemErro ?>
+    </div>
+<?php endif; ?>
+
+
     <form method="POST" action="notas.php">
     <label for="nome">Nome do Aluno</label>
     <input type="text" id="nome" name="nome" required>
