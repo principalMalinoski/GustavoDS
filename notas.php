@@ -3,6 +3,8 @@ $nome = "";
 $idade = 0;
 $media = 0;
 $situacao = "";
+$exibirResultado = false;
+$mensagemErro = ""; 
 
  if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
