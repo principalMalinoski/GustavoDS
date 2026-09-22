@@ -25,7 +25,10 @@ if ($media >= 7) {
     }
  
     $exibirResultado = true;
+
 }
+ 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,9 +63,10 @@ if ($media >= 7) {
         <input type="number" id="nota5" name="nota5" min="0" max="10" step="0.1" required>
 
              <button type="submit">Enviar</button>
-    </form>
- 
-    <?php if ($exibirResultado): ?>
+    
+
+            <form>
+             <?php if ($exibirResultado): ?>
         <div class="resultado">
             <h2>Resultado</h2>
             <p><strong>Nome:</strong> <?= htmlspecialchars($nome) ?></p>
@@ -72,7 +76,6 @@ if ($media >= 7) {
         </div>
     <?php endif; ?>
 
-
-    </form>
+        </form>
 </body>
 </html>
