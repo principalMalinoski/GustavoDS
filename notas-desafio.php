@@ -28,7 +28,6 @@ if ($media >= 7) {
 
 }
  
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
