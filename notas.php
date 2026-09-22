@@ -2,7 +2,7 @@
 $nome = "";
 $idade = 0;
 $media = 0;
-$situação = "";
+$situacao = "";
 
  if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -42,7 +42,7 @@ if ($media >= 7) {
     <input type="text" id="nome" name="nome" required>
 
     <label for="idade">Idade</label>
-    <input type="number" id="idade" name="idade" min"0" required>
+    <input type="number" id="idade" name="idade" min="0" required>
 
     <label for="nota1">Nota 1 (peso 2)</label>
      <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.1" required>
@@ -74,5 +74,7 @@ if ($media >= 7) {
 
 
     </form>
+
+
 </body>
 </html>
