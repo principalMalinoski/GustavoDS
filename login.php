@@ -25,6 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    
+    <div class="login">
+        <h2 id="titulo">Login</h2>
+
+        <form action="" method="post"></form>
+
+        <div class="campo">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+        </div>
+        
+    </div>
 </body>
 </html>
