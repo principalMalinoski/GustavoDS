@@ -34,7 +34,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="usuario">Usuario</label>
             <input type="text" id="usuario" name="usuario" required>
         </div>
-        
+
+        <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            
     </div>
 </body>
 </html>
