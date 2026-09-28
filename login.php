@@ -47,6 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <?php echo $mensagem; ?>
             </div>
         <?php endif; ?> 
+        
+        </form>
         <!-- Sua principal função é exibir uma mensagem na tela apenas se ela não estiver vazia -->
     
     </div>
