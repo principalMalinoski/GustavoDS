@@ -8,14 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST["usuario"];
     $senha = $_POST["senha"];
 
-    if ($usuario == $usuarioCorreto && $senha == $senhaCorreta) {
-        $mensagem = "Login realizado com sucesso"
+    if ($usuario === $usuarioCorreto && $senha === $senhaCorreta) {
+        $mensagem = "Login realizado com sucesso";
     } else {
-        $mensagem = "Usuario ou senha incorretos";
+        $mensagem = "Usuário ou senha incorretos";
     }
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +40,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" id="senha" name="senha" required>
             </div>
             <button type="submit">Entrar</button>
+        </form>
+
+        <?php if ($mensagem != ""): ?>
+            <div class="mensagem">
+                <?php echo $mensagem; ?>
+            </div>
+        <?php endif; ?> 
+        <!-- Sua principal função é exibir uma mensagem na tela apenas se ela não estiver vazia -->
+    
     </div>
 </body>
 </html>
