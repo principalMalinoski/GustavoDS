@@ -52,5 +52,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- Sua principal função é exibir uma mensagem na tela apenas se ela não estiver vazia -->
     
     </div>
+
 </body>
+
+<!-- Para testar com GET, altere:
+<form method="POST" action="">
+
+para:
+<form method="GET" action="">
+
+E altere também:
+$_POST["usuario"] para $_GET["usuario"]
+$_POST["senha"] para $_GET["senha"] -->
+
 </html>
+
