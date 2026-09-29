@@ -2,28 +2,25 @@
 
 require "conexao.php";
 
-
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     genero VARCHAR(50),
-    nota INT
-    ano de lancamento VARCHAR(50),
+    nota INT,
+    ano_lancamento INT
 )";
 
 $pdo->exec($sql);
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nome = $_POST["nome"];
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
-    $ano_de_lancamento = $_POST["ano_de_lancamento"];
+    $ano_lancamento = $_POST["ano_lancamento"];
 
-    
-    $sql = "INSERT INTO jogos (nome, genero, nota,)
-            VALUES ('$nome', '$genero', '$nota', '$ano_de_lancamento')";
+    $sql = "INSERT INTO jogos (nome, genero, nota, ano_lancamento)
+            VALUES ('$nome', '$genero', '$nota', '$ano_lancamento')";
 
     $pdo->exec($sql);
 
@@ -87,15 +84,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br>
 
         <div>
-            <label for="ano_de_lancamento">Ano de Lançamento:</label>
+            <label for="ano_lancamento">Ano de Lançamento:</label>
             <input
-                type="text"
-                id="ano_de_lancamento"
-                name="ano_de_lancamento"
-                placeholder="Digite o Ano de Lançamento"
+                type="number"
+                id="ano_lancamento"
+                name="ano_lancamento"
+                placeholder="Digite o ano de lançamento"
                 required
             >
         </div>
+
+        <br>
 
         <button type="submit">Cadastrar</button>
 
