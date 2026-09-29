@@ -1,129 +1,93 @@
+<?php
+
+require "conexao.php";
+
+// Criar tabela
+$sql = "CREATE TABLE IF NOT EXISTS jogos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    genero VARCHAR(50),
+    nota INT
+)";
+
+$pdo->exec($sql);
+
+// Verificar se o formulário foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $nome = $_POST["nome"];
+    $genero = $_POST["genero"];
+    $nota = $_POST["nota"];
+
+    // Cadastrar jogo
+    $sql = "INSERT INTO jogos (nome, genero, nota)
+            VALUES ('$nome', '$genero', '$nota')";
+
+    $pdo->exec($sql);
+
+    echo "Jogo cadastrado com sucesso!";
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
+    <title>Cadastro de Jogos</title>
 </head>
 
 <body>
-<h2> NOMES DOS JOGOS</h2>
 
-<form method="POST">
+    <h2>Cadastro de Jogos</h2>
 
-    <div>
-        <label for="nome">King Kong:</label>
-        <input 
-            type="text" 
-            id="nome" 
-            name="nome" 
-            placeholder="Digite seu nome"
-        >
+    <form method="POST">
 
-        <label for="genêro">Genêro:</label>
-        <input 
-            type="text" 
-            id="genêro" 
-            name="genêro"  
-            placeholder="Digite seu genêro"
-        >
-        <label for="Nota">nota:</label>
-        <input 
-            type="text" 
-            id="nota" 
-            name="nota"  
-            placeholder="Digite sua nota"
-        >
-        <label for="nome">Fifa 2023:</label>
-        <input 
-            type="text" 
-            id="nome" 
-            name="nome" 
-            placeholder="Digite seu nome"
-        >
-
-        <label for="genêro">Genêro:</label>
-        <input 
-            type="text" 
-            id="genêro" 
-            name="genêro"  
-            placeholder="Digite seu genêro"
-        >
-        <label for="Nota">nota:</label>
-        <input 
-            type="text" 
-            id="nota" 
-            name="nota"  
-            placeholder="Digite sua nota">
-
-
-        <label for="nome">Make a Pizza</label>
-        <input 
-            type="text" 
-            id="nome" 
-            name="nome" 
-            placeholder="Digite seu nome"
-        >
-
-        <label for="genêro">Genêro:</label>
-        <input 
-            type="text" 
-            id="genêro" 
-            name="genêro"  
-            placeholder="Digite seu genêro"
-        >
-        <label for="Nota">nota:</label>
-        <input 
-            type="text" 
-            id="nota" 
-            name="nota"  
-            placeholder="Digite sua nota">
-
-        <button>Cadastrar</button>
+        <div>
+            <label for="nome">Nome do jogo:</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite o nome do jogo"
+                required
+            >
         </div>
-</form>
+
+        <br>
+
+        <div>
+            <label for="genero">Gênero:</label>
+            <input
+                type="text"
+                id="genero"
+                name="genero"
+                placeholder="Digite o gênero"
+                required
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="nota">Nota:</label>
+            <input
+                type="number"
+                id="nota"
+                name="nota"
+                placeholder="Digite a nota"
+                required
+            >
+        </div>
+
+        <br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
 
 </body>
+
 </html>
-
-<?php 
-
-try {
-    $pdo = new PDO("mysql:host=$servidor;dbname=$banco;charset=utf8", $usuario, $senha);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-$host = "localhost";
-$banco = "gustavo315";
-$usuario = "gustavo315";
-$senha = "315!@#";
-  
- echo "Meu sistema está Conectado";
-
- $sql = "CREATE TABLE IF NOT EXISTS teste (
- id INT AUTO_INCREMENT PRIMARY KEY,
- nome VARCHAR(100),
- genêro VARCHAR(50),
- nota INT)";
-
- $pdo->exec($sql);
- echo  "<br>Tabela criada com sucesso";
- 
-$nome = $_POST["nome"];
-echo "Olá, " . htmlspecialchars($nome) . "!";
-
-INSERT INTO Jogos (nome , gênero, nota) 
-VALUES ('King Kong', 'Aventura', '8/10');
-
-
-INSERT INTO Jogos (nome , gênero, nota) 
-VALUES ('Fifa 2022', 'esportivo','9/10' );
-
-INSERT INTO Jogos (nome , gênero, nota) 
-VALUES ('Make a Pizza', 'divertido','6/10' );
-
-}
-?>
-
-
-
-
