@@ -88,6 +88,10 @@
 
 <?php 
 
+try {
+    $pdo = new PDO("mysql:host=$servidor;dbname=$banco;charset=utf8", $usuario, $senha);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $host = "localhost";
 $banco = "gustavo315";
 $usuario = "gustavo315";
@@ -107,6 +111,14 @@ $senha = "315!@#";
 $nome = $_POST["nome"];
 echo "Olá, " . htmlspecialchars($nome) . "!";
 
+INSERT INTO clientes (nome , gênero, nota) 
+VALUES ('King Kong', 'Aventura', '1993-06-01');
+
+
+INSERT INTO clientes (nome , gênero, nota) 
+VALUES ('King Kong', 'esportivo', '1993-06-01');
+
+}
 ?>
 
 
