@@ -57,7 +57,7 @@
             placeholder="Digite sua nota">
 
 
-        <label for="nome">Make a pizza</label>
+        <label for="nome">Make a Pizza</label>
         <input 
             type="text" 
             id="nome" 
@@ -111,12 +111,15 @@ $senha = "315!@#";
 $nome = $_POST["nome"];
 echo "Olá, " . htmlspecialchars($nome) . "!";
 
-INSERT INTO clientes (nome , gênero, nota) 
-VALUES ('King Kong', 'Aventura', '1993-06-01');
+INSERT INTO Jogos (nome , gênero, nota) 
+VALUES ('King Kong', 'Aventura', '8/10');
 
 
-INSERT INTO clientes (nome , gênero, nota) 
-VALUES ('King Kong', 'esportivo', '1993-06-01');
+INSERT INTO Jogos (nome , gênero, nota) 
+VALUES ('Fifa 2022', 'esportivo','9/10' );
+
+INSERT INTO Jogos (nome , gênero, nota) 
+VALUES ('Make a Pizza', 'divertido','6/10' );
 
 }
 ?>
