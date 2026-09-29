@@ -2,26 +2,28 @@
 
 require "conexao.php";
 
-// Criar tabela
+
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     genero VARCHAR(50),
     nota INT
+    ano de lancamento VARCHAR(50),
 )";
 
 $pdo->exec($sql);
 
-// Verificar se o formulário foi enviado
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nome = $_POST["nome"];
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
+    $ano_de_lancamento = $_POST["ano_de_lancamento"];
 
-    // Cadastrar jogo
+    
     $sql = "INSERT INTO jogos (nome, genero, nota,)
-            VALUES ('$nome', '$genero', '$nota')";
+            VALUES ('$nome', '$genero', '$nota', '$ano_de_lancamento')";
 
     $pdo->exec($sql);
 
@@ -83,6 +85,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <br>
+
+        <div>
+            <label for="ano_de_lancamento">Ano de Lançamento:</label>
+            <input
+                type="text"
+                id="ano_de_lancamento"
+                name="ano_de_lancamento"
+                placeholder="Digite o Ano de Lançamento"
+                required
+            >
+        </div>
 
         <button type="submit">Cadastrar</button>
 
