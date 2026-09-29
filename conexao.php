@@ -14,7 +14,7 @@ try {
 // PDO::ATTR_ERRMODE é para configurar o modo de erros do PDO
 // PDO:ERRMODE_EXPECTION é para quando acontecer algum erro, transformar em execução
 
-    $pdo = new PDO("mysql:host=$host;dbnane:$banco;charsert=utf8mb4",$usuario, $senha);
+    $pdo = new PDO("mysql:host=$host;dbname=$banco;charsert=utf8mb4",$usuario, $senha);
     $pdo->setAttribute(
         PDO::ATTR_ERRMODE,
         PDO::ERRMODE_EXCEPTION
