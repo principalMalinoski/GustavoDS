@@ -1,7 +1,7 @@
 <?php
-    echo "debug 1";
+echo "debug 1";
 require "conexao.php";
-    echo "debug 1";
+echo "debug 1";
 
 // Cria a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
@@ -12,7 +12,7 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
 )";
 
 $pdo->exec($sql);
-    echo "debug 2";
+echo "debug 2";
 
 // Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -29,19 +29,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "debug 4";
 
     echo "<p>Jogo cadastrado com sucesso!</p>";
-
-    // Buscar todos os jogos registrados no banco de dados
-    $buscar = "SELECT * FROM jogos";
-
-    // exec() = executa algo quando você NÃO precisa receber registros de volta
-    // query() = executa uma consulta quando você QUER receber dados de volta
-    $stat = $pdo->query($buscar);
-    echo "debug 5";
-
-    // fetchAll = buscar todos os registros
-    $jogos = $stmt->fetchAll (PDO::FETCH_ASSOC);
-
 }
+
+// Buscar todos os jogos registrados no banco de dados
+$buscar = "SELECT * FROM jogos";
+
+// exec() = executa algo quando você NÃO precisa receber registros de volta
+// query() = executa uma consulta quando você QUER receber dados de volta
+$stat = $pdo->query($buscar);
+echo "debug 5";
+
+// fetchAll = buscar todos os registros
+$jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+echo "debug 6";
 
 ?>
 
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
     <h2>Jogos cadastrados</h2>
-    
+
     <form method="POST">
 
         <div>
@@ -67,8 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 id="nome"
                 name="nome"
                 placeholder="Digite o nome do jogo"
-                required
-            >
+                required>
         </div>
 
         <br>
@@ -80,8 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 id="genero"
                 name="genero"
                 placeholder="Digite o gênero"
-                required
-            >
+                required>
         </div>
 
         <br>
@@ -93,8 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 id="nota"
                 name="nota"
                 placeholder="Digite a nota"
-                required
-            >
+                required>
         </div>
 
         <br>
@@ -103,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </form>
 
-   
+
     <h2>Jogos cadastrados</h2>
 
     <table>
@@ -116,14 +113,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </tr>
         <!-- foreach() -> Para cada item da lista, faça alguma coisa com X fariável -->
 
-        <?php foreach($jogos as $jogo) { ?>
-        <tr>
-            <td><?= $jogo["id"]?></td>
-            <td><?= $jogo["nome"]?></td>
-            <td><?= $jogo["gênero"]?></td>
-            <td><?= $jogo["nota"]?></td>
-        <tr>
-      <?php }  ?>      
+        <?php foreach ($jogos as $jogo) { ?>
+            <tr>
+                <td><?= $jogo["id"] ?></td>
+                <td><?= $jogo["nome"] ?></td>
+                <td><?= $jogo["gênero"] ?></td>
+                <td><?= $jogo["nota"] ?></td>
+            <tr>
+            <?php }  ?>
     </table>
 
 </body>
