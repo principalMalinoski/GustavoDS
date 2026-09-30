@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nota = $_POST["nota"];
 
     // Cadastrar jogo
-    $sql = "INSERT INTO jogos (nome, genero, nota,)
-            VALUES ('$nome', '$genero', '$nota')";
+    $sql = "INSERT INTO jogos (nome, genero, nota)
+            VALUES ('$nome', '$genero', $nota)";
 
     $pdo->exec($sql);
     echo "debug 4";
