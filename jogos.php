@@ -23,10 +23,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
     $senha = $_POST["senha"];
-    
-    // Cadastrar jogo / INSERT INTO = INSERIR DENTRO
-    $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
 
+    // Cadastrar jogo / INSERT INTO = INSERIR DENTRO
+    if($_POST["senha"]==$senha){
+
+    $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
+    } else {
+        echo "Senha Incorreta";
+    }
+    
     $pdo->exec($sql);
     echo "debug 4";
 
@@ -92,6 +97,8 @@ echo "debug 6";
                 type="number"
                 id="nota"
                 name="nota"
+                min="0"
+                max="10"
                 placeholder="Digite a nota"
                 required>
         </div>
