@@ -24,6 +24,6 @@
     <a href="idade.php">Verificador de idade</a>
     <a href="notas.php">Verificador de Notas</a>
     <a href="login.php">Login básico</a>
-    <a href="jogos.php">Jogos </a>
+    <a href="jogos.php">Jogos cadastrados</a>
 </body>
 </html>
