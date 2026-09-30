@@ -1,6 +1,7 @@
 <?php
-
+    echo "debug 1";
 require "conexao.php";
+    echo "debug 1";
 
 // Cria a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
@@ -11,9 +12,11 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
 )";
 
 $pdo->exec($sql);
+    echo "debug 2";
 
 // Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "debug 3";
 
     $nome = $_POST["nome"];
     $genero = $_POST["genero"];
@@ -24,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$nome', '$genero', '$nota')";
 
     $pdo->exec($sql);
+    echo "debug 4";
 
     echo "Jogo cadastrado com sucesso!";
 
@@ -33,6 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // exec() = executa algo quando você NÃO precisa receber registros de volta
     // query() = executa uma consulta quando você QUER receber dados de volta
     $stat = $pdo->query($buscar);
+    echo "debug 5";
 
     // fetchAll = buscar todos os registros
     $jogos = $stmt->fetchAll (PDO::FETCH_ASSOC);
