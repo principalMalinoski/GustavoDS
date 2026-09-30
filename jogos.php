@@ -2,7 +2,7 @@
 
 require "conexao.php";
 
-// Criar tabela
+// Cria a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
@@ -12,7 +12,7 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
 
 $pdo->exec($sql);
 
-// Verificar se o formulário foi enviado
+// Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nome = $_POST["nome"];
@@ -26,6 +26,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdo->exec($sql);
 
     echo "Jogo cadastrado com sucesso!";
+
+    // Buscar todos os jogos registrados no banco de dados
+    $buscar = "SELECT * FROM jogos";
+
+    // exec() = executa algo quando você NÃO precisa receber registros de volta
+    // query() = executa uma consulta quando você QUER receber dados de volta
+    $stat = $pdo->query($buscar);
+
+    // fetchAll = buscar todos os registros
+    $jogos = $stmt->fetchAll (PDO::FETCH_ASSOC);
+
 }
 
 ?>
