@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdo->exec($sql);
     echo "debug 4";
 
-    echo "Jogo cadastrado com sucesso!";
-
+    echo "<p>Jogo cadastrado com sucesso!</p>";
+}
     // Buscar todos os jogos registrados no banco de dados
     $buscar = "SELECT * FROM jogos";
 
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // fetchAll = buscar todos os registros
     $jogos = $stmt->fetchAll (PDO::FETCH_ASSOC);
 
-}
+
 
 ?>
 
@@ -107,25 +107,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
-<!-- Jeito que professor fez: 
-  
-<h2>Jogos cadastrados</h2>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>GÊNERO</th>
-            <th>Nota</th>
-
-        </tr>
-        <!- foreach() -> Para cada item da lista, faça aulguma coisa com X fariável 
-
-        <?php foreach($jogos as $jogo) {?>
-        <tr>
-            <td><?= $jogo["id"]?></td>
-            <td><?= $jogo["nome"]?></td>
-            <td><?= $jogo["gênero"]?></td>
-            <td><?= $jogo["nota"]?></td>
-        <tr>
-      <?php } ?>      
-    </table>
