@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "debug 4";
 
     echo "<p>Jogo cadastrado com sucesso!</p>";
-
+}
     // Buscar todos os jogos registrados no banco de dados
     $buscar = "SELECT * FROM jogos";
 
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // fetchAll = buscar todos os registros
     $jogos = $stmt->fetchAll (PDO::FETCH_ASSOC);
 
-}
+
 
 ?>
 
