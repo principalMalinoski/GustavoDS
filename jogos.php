@@ -104,12 +104,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </form>
 
-</body>
-
-</html>
-<!-- Jeito que professor fez: 
-  
-<h2>Jogos cadastrados</h2>
+   
+    <h2>Jogos cadastrados</h2>
+    
     <table>
         <tr>
             <th>ID</th>
@@ -129,3 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <tr>
       <?php } ?>      
     </table>
+
+</body>
+
+</html>
