@@ -10,6 +10,7 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
     genero VARCHAR(50),
     nota INT
 )";
+    $senha ="1909";
 
 $pdo->exec($sql);
 echo "debug 2";
@@ -21,7 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
-
+    $senha = $_POST["senha"];
+    
     // Cadastrar jogo / INSERT INTO = INSERIR DENTRO
     $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
 
@@ -96,6 +98,18 @@ echo "debug 6";
 
         <br>
 
+        <div>
+            <label for="senha">Senha:</label>
+            <input
+                type="number&text"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required>
+        </div>
+
+        <br>
+
         <button type="submit">Cadastrar</button>
 
     </form>
@@ -120,7 +134,9 @@ echo "debug 6";
                 <td><?= $jogo["gênero"] ?></td>
                 <td><?= $jogo["nota"] ?></td>
             <tr>
-            <?php }  ?>
+            <?php }  
+
+            ?>
     </table>
 
 </body>
