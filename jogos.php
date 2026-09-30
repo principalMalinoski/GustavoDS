@@ -22,17 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genero = $_POST["genero"];
     $nota = $_POST["nota"];
 
-    // Cadastrar jogo
-    $sql = "INSERT INTO jogos (nome, genero, nota)
-            VALUES ('$nome', '$genero', $nota)";
+    // Cadastrar jogo / INSERT INTO = INSERIR DENTRO
+    $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
 
     $pdo->exec($sql);
     echo "debug 4";
 
     echo "<p>Jogo cadastrado com sucesso!</p>";
-} 
 
-{
     // Buscar todos os jogos registrados no banco de dados
     $buscar = "SELECT * FROM jogos";
 
