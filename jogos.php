@@ -10,7 +10,7 @@ $sql = "CREATE TABLE IF NOT EXISTS jogos (
     genero VARCHAR(50),
     nota INT
 )";
-    $senha ="1909";
+    $senhac ="1909";
 
 $pdo->exec($sql);
 echo "debug 2";
@@ -25,13 +25,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST["senha"];
 
     // Cadastrar jogo / INSERT INTO = INSERIR DENTRO
-    if($_POST["senha"]==$senha){
+    if($_POST["senha"]==$senhac){
 
     $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', $nota)";
     } else {
         echo "Senha Incorreta";
     }
-    
+
     $pdo->exec($sql);
     echo "debug 4";
 
@@ -108,7 +108,7 @@ echo "debug 6";
         <div>
             <label for="senha">Senha:</label>
             <input
-                type="number&text"
+                type="password"
                 id="senha"
                 name="senha"
                 placeholder="Digite sua senha"
