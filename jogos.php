@@ -1,7 +1,7 @@
 <?php
 echo "debug 1";
 require "conexao.php";
-echo "debug 1";
+echo "debug 1.5";
 
 // Cria a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
@@ -40,7 +40,7 @@ $stat = $pdo->query($buscar);
 echo "debug 5";
 
 // fetchAll = buscar todos os registros
-$jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$jogos = $stat->fetchAll(PDO::FETCH_ASSOC);
 echo "debug 6";
 
 ?>
