@@ -111,19 +111,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <th>ID</th>
             <th>NOME</th>
             <th>GÊNERO</th>
-            <th>Nota</th>
+            <th>NOTA</th>
 
         </tr>
         <!-- foreach() -> Para cada item da lista, faça alguma coisa com X fariável -->
 
-        <?php foreach($jogos as $jogo) {?>
+        <?php foreach($jogos as $jogo) { ?>
         <tr>
             <td><?= $jogo["id"]?></td>
             <td><?= $jogo["nome"]?></td>
             <td><?= $jogo["gênero"]?></td>
             <td><?= $jogo["nota"]?></td>
         <tr>
-      <?php } ?>      
+      <?php }  ?>      
     </table>
 
 </body>
