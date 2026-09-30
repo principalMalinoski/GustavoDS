@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
     <h2>Jogos cadastrados</h2>
-    
+
     <table>
         <tr>
             <th>ID</th>
@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <th>Nota</th>
 
         </tr>
-        <!- foreach() -> Para cada item da lista, faça aulguma coisa com X fariável 
+        <!-- foreach() -> Para cada item da lista, faça alguma coisa com X fariável -->
 
         <?php foreach($jogos as $jogo) {?>
         <tr>
