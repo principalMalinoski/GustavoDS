@@ -136,10 +136,44 @@
         </a>
     </div>
      <!-- PROJETO 2 -->
-     <div class="projeto-card">
+     <div class="projeto-login">
                 02
         </div>
-        <h3>Verificação de idade</h3>
+        <h3>Verificação de Login</h3>
+        <p>
+            Sistema desenvolvido para praticar formulários e manipulação de dados.
+        </p>
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+        </div>
+        <a href="projetos/login.php" class="link-projeto">
+            ver projeto ->
+        </a>
+    </div>
+     <!-- PROJETO 3 -->
+     <div class="projeto-jogoa">
+                03
+        </div>
+        <h3>Verificar os jogos</h3>
+        <p>
+            Sistema desenvolvido para praticar formulários e manipulação de dados.
+        </p>
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+        </div>
+        <a href="projetos/idade.php" class="link-projeto">
+            ver projeto ->
+        </a>
+    </div>
+     <!-- PROJETO 4 -->
+     <div class="projeto-notas">
+                04
+        </div>
+        <h3>Verificação de notas</h3>
         <p>
             Sistema desenvolvido para praticar formulários e manipulação de dados.
         </p>
@@ -153,8 +187,34 @@
         </a>
     </div>
     </section>
-        
-    </main>
-    
+    <section id="contato" class="secao secao-destaque">
+        <h2 class="titulo-secao">Contato</h2>
+        <p class="substitulo-secao">
+            Quer entar em contato comigo?
+        </p>
+        <div class="contato-container">
+            <div class="contato-item">
+                <h3>Whatsapp</h3>
+                <p>+55 41 99232-3500</p>
+            </div>
+            <div class="contato-item">
+                <h3>GitHub</h3>
+                <p>github.com/lookdev-GustavoDS</p>
+            </div>
+            <div class="contato-item">
+                <h3>Linkedin</h3>
+                <p>linkedin.com/in/GustavoDS</p>
+            </div>
+        </div>
+    </section>
+</main>
+    <!-- =============================
+        RODAPÉ
+        ==================== -->
+    <footer>
+    <p>
+        Desenvolvido por <a href="https://gustavo315">Gustavo Malinoski</a> * 2026
+    </p>
+    </footer>
 </body>
 </html>
