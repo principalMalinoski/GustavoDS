@@ -74,7 +74,49 @@
 <!--===========================
         SOBRE MIM
     =================-->
+<section id="sobre" class="secao">
+        <h2 class="titulo-secao">Sobre mim</h2>
+    <div class="sobre-conteudo">
+            <div class="foto">
+                JS
+            </div>
+        <div class="sobre-texto">
+            <h3>Quem sou eu?</h3>
+        <p>
+            Meu nome é Gustavo e sou aluno do curso do Desenvolvimento de Sistemas
+        </p>
+        <p>
+            Atualmente estou aprendendo aulas de desenvolvimento web, programação e criação de Sistemas
+            Este portfólio reúne alguns dos projetos desenvolvidos durante o curso junto dos alunos.
+        </p>
+        <p>
+            Meu objetivo é continuar evoluindo como desenvolvedor e aprender novas tecnologias.
+        </p>
+        </div>    
+    </div>
+</section>
+        <section id="habilidades" class="secao secao-destaque">
+            <h2 class="titulo-secao">Minhas habilidades</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
 
+
+
+
+
+
+
+
+
+
+    </section>
 
 
     </main>
