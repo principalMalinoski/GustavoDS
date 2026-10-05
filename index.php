@@ -119,7 +119,7 @@
         </p>
         <div class="projetos-container">
         <!-- PROJETO 1 -->
-        <div class="projeto-numero">
+        <div class="projeto-idade">
                 01
         </div>
         <h3>Verificação de idade</h3>
@@ -153,7 +153,7 @@
         </a>
     </div>
      <!-- PROJETO 3 -->
-     <div class="projeto-jogoa">
+     <div class="projeto-jogos">
                 03
         </div>
         <h3>Verificar os jogos</h3>
@@ -165,7 +165,7 @@
             <span>CSS</span>
             <span>PHP</span>
         </div>
-        <a href="projetos/idade.php" class="link-projeto">
+        <a href="projetos/jogos.php" class="link-projeto">
             ver projeto ->
         </a>
     </div>
@@ -182,7 +182,7 @@
             <span>CSS</span>
             <span>PHP</span>
         </div>
-        <a href="projetos/idade.php" class="link-projeto">
+        <a href="projetos/notas.php" class="link-projeto">
             ver projeto ->
         </a>
     </div>
