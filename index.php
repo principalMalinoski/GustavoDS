@@ -136,8 +136,8 @@
         </a>
     </div>
      <!-- PROJETO 2 -->
-     <div class="projeto-numero">
-                01
+     <div class="projeto-card">
+                02
         </div>
         <h3>Verificação de idade</h3>
         <p>
@@ -152,37 +152,8 @@
             ver projeto ->
         </a>
     </div>
-
-
-
-
-
-
-
-
     </section>
         
-        
-        
-        
-        
-        
-        
-        
-        </div>
-
-
-
-
-
-
-
-
-
-
-    </section>
-
-
     </main>
     
 </body>
