@@ -3,6 +3,8 @@ echo "debug 1";
 require "conexao.php";
 echo "debug 1.5";
 
+require __DIR__ . "/../conexao.php";
+
 // Cria a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
     id INT PRIMARY KEY AUTO_INCREMENT,
