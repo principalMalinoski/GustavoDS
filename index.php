@@ -87,6 +87,7 @@
         </p>
         <p>
             Atualmente estou aprendendo aulas de desenvolvimento web, programação e criação de Sistemas
+            <br>
             Este portfólio reúne alguns dos projetos desenvolvidos durante o curso junto dos alunos.
         </p>
         <p>
