@@ -98,7 +98,7 @@
         <section id="habilidades" class="secao secao-destaque">
             <h2 class="titulo-secao">Minhas habilidades</h2>
             <p class="substitulo-secao">
-              Alg8umas tecnologias que estou aprendendo          
+              Algumas tecnologias que estou aprendendo          
              </p>
              <div class="lista-habilidades">
                 <div class="habilidade">
