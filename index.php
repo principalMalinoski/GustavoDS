@@ -97,6 +97,70 @@
 </section>
         <section id="habilidades" class="secao secao-destaque">
             <h2 class="titulo-secao">Minhas habilidades</h2>
+            <p class="substitulo-secao">
+              Alg8umas tecnologias que estou aprendendo          
+             </p>
+             <div class="lista-habilidades">
+                <div class="habilidade">
+                    HTML
+                </div>
+            <div class="habilidade">
+                    CSS
+            </div>
+            <div class="habilidade">
+                    PHP
+            </div>
+        </div>
+    </section>
+    <section id="projetos" class="secao">
+        <h2 class="titulo-secao">Meus projetos</h2>
+        <p class="subtitulo-secao">
+            Alguns projetos desenvolvidos durante o curso
+        </p>
+        <div class="projetos-container">
+        <!-- PROJETO 1 -->
+        <div class="projeto-numero">
+                01
+        </div>
+        <h3>Verificação de idade</h3>
+        <p>
+            Sistema desenvolvido para praticar formulários e manipulação de dados.
+        </p>
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+        </div>
+        <a href="projetos/idade.php" class="link-projeto">
+            ver projeto ->
+        </a>
+    </div>
+     <!-- PROJETO 2 -->
+     <div class="projeto-numero">
+                01
+        </div>
+        <h3>Verificação de idade</h3>
+        <p>
+            Sistema desenvolvido para praticar formulários e manipulação de dados.
+        </p>
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+        </div>
+        <a href="projetos/idade.php" class="link-projeto">
+            ver projeto ->
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    </section>
         
         
         
