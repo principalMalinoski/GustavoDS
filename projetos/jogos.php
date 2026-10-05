@@ -1,9 +1,7 @@
 <?php
 echo "debug 1";
-require "conexao.php";
-echo "debug 1.5";
-
 require __DIR__ . "/../conexao.php";
+echo "debug 1.5";
 
 // Cria a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (

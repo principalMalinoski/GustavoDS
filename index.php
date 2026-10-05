@@ -21,9 +21,9 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="idade.php">Verificador de idade</a>
-    <a href="notas.php">Verificador de Notas</a>
-    <a href="login.php">Login básico</a>
-    <a href="jogos.php">Jogos cadastrados</a>
+    <a href="projetos/idade.php">Verificador de idade</a>
+    <a href="projetos/notas.php">Verificador de Notas</a>
+    <a href="projetos/login.php">Login básico</a>
+    <a href="projetos/jogos.php">Jogos cadastrados</a>
 </body>
 </html>
