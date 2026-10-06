@@ -193,3 +193,77 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px black;
 }
+
+.projeto-numero {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.projeto-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* TECNOLOGIAS UTILIZADAS */
+
+.tecnologias {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tecnologias span {
+    background-color: aliceblue;
+    color: #1d4ed8;
+    padding:  5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Link do Projeto */
+
+.link-projeto {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-projeto:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================================================
+    CONTATO
+    ================================================ */
+
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contato-item {
+    background-color: antiquewhite;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px black;
+}
+
+.contato-item h3 {
+    color: #1d4ed8;
+    margin-bottom: 5px;
+}
