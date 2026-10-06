@@ -152,3 +152,43 @@ footer a:hover {
 /* =================================================================
     RESPONSIVIDADE
     ==================================== */
+
+    @media (max-width: 800px) {
+
+    /* MENU */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    /* PÁGINA */
+
+    .pagina-projeto {
+        padding: 40px 20px 60px;
+    }
+
+
+    /* CABEÇALHO */
+
+    .cabecalho-projeto h1 {
+        font-size: 32px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .conteudo-projeto {
+        padding: 25px;
+    }
+    
