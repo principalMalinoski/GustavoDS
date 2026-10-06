@@ -116,3 +116,52 @@ header {
 .botao:hover {
     background-color: #1d4ed8;
 }
+
+.foto {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.sobre-texto h3 {
+    font-size: 25px;
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+}
+
+/*SEÇÕES COM FUNDO DIFERENTE */
+
+.secao-destaque {
+    max-width: 100%;
+    background-color: #f5f5f5;
+}
+
+.secao-destaque > * {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HABILIDADES */
+
+.lista-habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.habilidade {
+    background-color: white;
+    
+}
