@@ -283,3 +283,61 @@ header {
             RESPONSIVIDADE 
      ============================== */
  
+     @media (max-width: 800px) {
+
+        /* Menu */
+    
+        .navbar {
+            flex-direction: column;
+    
+            gap: 15px;
+        }
+    
+        .menu {
+            flex-wrap: wrap;
+    
+            justify-content: center;
+    
+            gap: 15px;
+        }
+    
+    
+        /* Início */
+    
+        .inicio {
+            min-height: 70vh;
+        }
+    
+        .inicio h1 {
+            font-size: 40px;
+        }
+    
+        .inicio h2 {
+            font-size: 23px;
+        }
+    
+    
+        /* Sobre */
+    
+        .sobre-conteudo {
+            flex-direction: column;
+    
+            text-align: center;
+        }
+    
+    
+        /* Projetos */
+    
+        .projetos-container {
+            grid-template-columns: 1fr;
+        }
+    
+    }
+    
+    /* =========================================
+       PÁGINAS DOS PROJETOS
+    ========================================= */
+    
+    .pagina-projeto {
+        min-height: calc(100vh - 150px);
+    }
