@@ -34,11 +34,11 @@
         <h2 class="logo">Meu Portifólio</h2>
 
         <ul class="menu">
-            <li><a href="#inicio">inicio</a></li>
-            <li><a href="#sobre">sobre</a></li>
-            <li><a href="#habilidades">habilidades</a></li>
-            <li><a href="#projetos">projetos</a></li>
-            <li><a href="#contato"></a>contato</li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato"></a>Contato</li>
         </ul>
 
         </nav>
