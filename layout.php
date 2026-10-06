@@ -56,4 +56,19 @@
              DESENVOLVA O PROJETO A PARTIR DAQUI -->
         <section class="conteudo-projeto">
             <h2>Cadastro de Jogos</h2>
-            <form method="POST">
+        </section>
+
+        <!-- FIM DA ATIVIDADE -->
+        <div class="voltar-projetos">
+            <a href="../index.php#projetos"> <- Voltar para Projetos</a>
+        </div>]
+    </main>
+
+    <!-- RODAPÉ -->
+     <footer>
+        <p> Desenvolvido por <a href="https://principalMalinoski"> Gustavo Malinoski </a> * 2026</p>
+     </footer>
+<body>
+    
+</html>        
+    

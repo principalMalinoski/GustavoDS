@@ -214,7 +214,7 @@
         ==================== -->
     <footer>
     <p>
-        Desenvolvido por <a href="https://gustavo315">Gustavo Malinoski</a> * 2026
+        Desenvolvido por <a href="https://principalMalinoski"> Gustavo Malinoski </a> * 2026
     </p>
     </footer>
 </body>
