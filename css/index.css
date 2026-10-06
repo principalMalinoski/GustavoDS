@@ -267,3 +267,18 @@ header {
     color: #1d4ed8;
     margin-bottom: 5px;
 }
+
+/* =======================================================
+        RODAPÉ
+        ============================= */
+
+    footer {
+        background-color: #111827;
+        color: #cccccccc;
+        text-align: center;
+        padding: 30px;
+    }
+
+    /* ================================================
+            RESPONSIVIDADE 
+     ============================== */
