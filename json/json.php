@@ -42,22 +42,40 @@ echo "DADOS REGISTRADOS EM dados.json";
 <body>
     <div class="Formulário">
         <h2 id="titulo">Formulário</h2>
-    <form action="" method="POST"></form>
+    <form action="/api/cadastro" method="POST">
+        
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
 
-            <div class="nome">
-                <label for="nome"> Nome:</label>
-                <input type="text" id="name" name="nome" required>
-                <button>Enviar</button>
+        <br>
 
-            </div class="idade">
-            <label for="idade">Idade</label>
-            <input type="number" id="idade" name="idade" required>
-            <button>Enviar</button>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Ex: 20" min="0" required>
+        </div>
 
-            <div class="curso">
-            <label for="curso">Curso</label>
-            <input type="text" id="curso" name="curso" required>
-            <button>Enviar</button>
-            </div>
+        <br>
+
+        <div>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" placeholder="Digite o nome do curso" required>
+        </div>
+
+        <br>
+
+        <button type="submit">Enviar Dados</button>
+
+</form>
+
+<h2>AKUNOS CADASTRADOS</h2>
+<?php foreach($alunos as $aluno) { ?>
+<h3><?=  $aluno["nome"] ?></h3>
+<p>Idade: <?=  $aluno["idade"] ?></p>
+<p>Curso <?=  $aluno["curso"] ?></p>
+
+<?php } ?>
+
 </body>
 </html>
