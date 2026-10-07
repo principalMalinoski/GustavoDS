@@ -7,7 +7,7 @@ $json = file_get_contents($caminho);
 
 //3. transformar JSON em Array PHP
 $alunos = json_decode($json, true);
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // 4. Criar um aluno
 
 $novoAluno = [
@@ -30,16 +30,31 @@ $jsonAtualizado  = json_encode($alunos,
 $jsonAtualizado);
 
 echo "DADOS REGISTRADOS EM dados.json";
-
+}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>json</title>
 </head>
 <body>
-    
+    <div class="Formulário">
+        <h2 id="titulo">Formulário</h2>
+    <form action="" method="POST"></form>
+
+            <div class="nome">
+                <label for="nome"> Nome:</label>
+                <input type="text" id="name" name="nome" required>
+
+            </div class="idade">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <div class="curso">
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" required>
+            </div>
 </body>
 </html>

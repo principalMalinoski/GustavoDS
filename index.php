@@ -21,6 +21,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
+</form>
+
 <body>
     <a href="projetos/idade.php">Verificador de idade</a>
     <a href="projetos/notas.php">Verificador de Notas</a>

@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login">
         <h2 id="titulo">Login</h2>
 
-        <form action="" method="post"></form>
+        <form action="" method="POST"></form>
 
         <div class="campo">
             <label for="usuario">Usuario</label>
