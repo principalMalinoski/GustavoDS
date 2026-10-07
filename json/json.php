@@ -8,12 +8,13 @@ $json = file_get_contents($caminho);
 //3. transformar JSON em Array PHP
 $alunos = json_decode($json, true);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
 // 4. Criar um aluno
 
 $novoAluno = [
-    "nome" => "Gustavo",
-    "idade" => 23,
-    "curso" => "Desenvolvimento de Sistemas"
+    "nome" => $_POST["nome"],
+    "idade" => $_POST["idade"],
+    "curso" => $_POST["curso"],
 ];
 
 // 5. Adicionar o aluno array
