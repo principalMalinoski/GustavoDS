@@ -56,7 +56,25 @@ $jsonAtualizado);
 
 echo "DADOS REGISTRADOS EM dados.json";
 }
- if ($acao === "deletar");
+ if ($acao === "deletar"){
+
+// PEGAR O NOME QUE QUEREMOS DELETAR
+$nome = $_POST["nome"];
+
+//PERCORRER TODOS OS ALUNOS
+foreach ($alunos as $posicao => $aluno) {
+
+// VERIFICAR SE ENCONTROU O ALUNO 
+if ($aluno["nome"] === $nome) {
+
+ // DELETAR O ALUNO DO ARRAY
+ $alunos = array_values($alunos);
+
+}
+
+}
+
+ }
 }
 
 
