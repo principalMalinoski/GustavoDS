@@ -47,14 +47,17 @@ echo "DADOS REGISTRADOS EM dados.json";
             <div class="nome">
                 <label for="nome"> Nome:</label>
                 <input type="text" id="name" name="nome" required>
+                <button>Enviar</button>
 
             </div class="idade">
             <label for="idade">Idade</label>
             <input type="number" id="idade" name="idade" required>
+            <button>Enviar</button>
 
             <div class="curso">
             <label for="curso">Curso</label>
             <input type="text" id="curso" name="curso" required>
+            <button>Enviar</button>
             </div>
 </body>
 </html>
