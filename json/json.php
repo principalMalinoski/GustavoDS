@@ -29,7 +29,7 @@ $jsonAtualizado  = json_encode($alunos,
     file_put_contents($caminho,
 $jsonAtualizado);
 
-echo "DADOS REGISTRADOS EM dados.json"
+echo "DADOS REGISTRADOS EM dados.json";
 
 ?>
 <!DOCTYPE html>
