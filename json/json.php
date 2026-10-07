@@ -56,7 +56,7 @@ $jsonAtualizado);
 
 echo "DADOS REGISTRADOS EM dados.json";
 }
-
+ if ($acao === "deletar");
 }
 
 
@@ -99,7 +99,7 @@ echo "DADOS REGISTRADOS EM dados.json";
 </form>
 
  <form method="POST">
-        
+        <h2 id="titulo">Atualizar</h2>
         <div>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
@@ -122,6 +122,32 @@ echo "DADOS REGISTRADOS EM dados.json";
         <br>
 
         <button type="submit" name="action" value="atualizar">Atualizar</button>
+
+</form>
+<form method="POST">
+        <h2 id="titulo">Deletar cadastrado</h2>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Ex: 20" min="0" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" placeholder="Digite o nome do curso" required>
+        </div>
+
+        <br>
+
+        <button type="submit" name="action" value="Deletar cadastro">Deletar Cadastro</button>
 
 </form>
 
