@@ -31,6 +31,7 @@ $jsonAtualizado);
 
 echo "DADOS REGISTRADOS EM dados.json";
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -42,7 +43,7 @@ echo "DADOS REGISTRADOS EM dados.json";
 <body>
     <div class="Formulário">
         <h2 id="titulo">Formulário</h2>
-    <form action="/api/cadastro" method="POST">
+    <form method="POST">
         
         <div>
             <label for="nome">Nome:</label>
@@ -69,7 +70,7 @@ echo "DADOS REGISTRADOS EM dados.json";
 
 </form>
 
-<h2>AKUNOS CADASTRADOS</h2>
+<h2>ALUNOS CADASTRADOS</h2>
 <?php foreach($alunos as $aluno) { ?>
 <h3><?=  $aluno["nome"] ?></h3>
 <p>Idade: <?=  $aluno["idade"] ?></p>
