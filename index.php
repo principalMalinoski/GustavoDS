@@ -205,6 +205,23 @@
             ver projeto ->
         </a>
     </div>
+    </div>
+     <!-- PROJETO 6 -->
+     <div class="helpdesk-dados">
+                06
+        </div>
+        <h3>Ajuda com o Helpdesk</h3>
+        <p>
+            É um serviço centralizado de suporte técnico e atendimento
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+        </div>
+        <a href="helpdesk/helpdesk.php" class="link-projeto">
+            ver projeto ->
+        </a>
+    </div>
     </section>
     <section id="contato" class="secao secao-destaque">
         <h2 class="titulo-secao">Contato</h2>
