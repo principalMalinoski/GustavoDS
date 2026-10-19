@@ -191,7 +191,7 @@
         </a>
     </div>
      <!-- PROJETO 5 -->
-     <div class="helpdesk-chamados">
+     <div class="json-dados">
                 05
         </div>
         <h3>Verificação do json</h3>
@@ -201,7 +201,7 @@
             <span>JSON</span>
             <span>PHP</span>
         </div>
-        <a href="helpdesk/chamados.json" class="link-projeto">
+        <a href="json/json.php" class="link-projeto">
             ver projeto ->
         </a>
     </div>
