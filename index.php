@@ -191,18 +191,17 @@
         </a>
     </div>
      <!-- PROJETO 5 -->
-     <div class="json-chamados.json">
+     <div class="helpdesk-chamados.json">
                 05
         </div>
-        <h3>Verificação de notas</h3>
+        <h3>Verificação do json</h3>
         <p>
-            Sistema desenvolvido para praticar formulários e manipulação de dados.
-        </p>
+            Sistema leve de texto usado para armazenar, organizar e transmitir dados entre diferentes sistemas
         <div class="tecnologias">
             <span>JSON</span>
             <span>PHP</span>
         </div>
-        <a href="json/chamados.json" class="link-projeto">
+        <a href="helpdesk/chamados.json" class="link-projeto">
             ver projeto ->
         </a>
     </div>
