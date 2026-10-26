@@ -14,6 +14,7 @@
         echo "Página não encontrada!";
         exit;
     }
+    // Caso Precise: href="/index.php?rotas=__"
 
     [$controller, $acao] = $rotas
     [$metodo][$rota];
@@ -21,3 +22,5 @@
     $controller->$acao();
 
 ?>
+
+
