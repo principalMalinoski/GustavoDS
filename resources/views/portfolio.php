@@ -114,6 +114,9 @@
             <div class="habilidade">
                     PHP
             </div>
+            <div class="habilidade">
+                    JAVA
+            </div>
         </div>
     </section>
     <section id="projetos" class="secao">
