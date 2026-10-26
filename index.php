@@ -14,7 +14,7 @@
         echo "Página não encontrada!";
         exit;
     }
-    // Caso Precise: href="/index.php?rotas="
+    // Caso Precise no Portfólio PHP : href="/index.php?rotas="
 
     [$controller, $acao] = $rotas
     [$metodo][$rota];
