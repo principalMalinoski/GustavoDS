@@ -23,7 +23,8 @@ atacar($nome);
 //Mostrar o que é necessárioe esconnder detalhes complicados de funcionamento
 
 //////////Exemplo COM POO////////////
-class Personagem {
+ abstract class Personagem {
+
     public $nome;
     private $vida = 100;
     public $dano = 10;
@@ -50,10 +51,9 @@ class Personagem {
         $this->vida = $vida;
     }
         
-    public function atacar() {
-        echo "$this->nome realizou um ataque";
-    }
-}
+   abstract public function atacar() ;
+ }
+
 $Gustavo->setVida(50);
 
 $Gustavo = new Personagem("Gustavo", 100, 10);
@@ -83,13 +83,30 @@ $Guerreiro->atacar(); //Método Herdado
 $Guerreiro->defender(); //Método Próprio
 
 class Mago extends Personagem {
-    public function atacar(){
+     public function atacar(){
         echo "$this->nome lançou uma bola de fogo!\n";
     }
     public function lancaMagia(){
         echo "$this->nome lançou uma bola de fogo!\n";
     }
 }
+
+class Curandeiro extends Personagem {
+    public function atacar(){
+        echo "$this->nome atacou com uma faca!";
+    }
+
+    public function curar(Personagem $alvo, int $quantidade){
+        $novaVida = $alvo->getVida() + $quantidade;
+        $alvo->setVida($novaVida);
+        echo "$this->nome curou {$alvo->nome} em $quantidade HP!\n";
+
+
+    }
+    
+        
+}
+
 
 $Guerreiro = new Guerreiro("Gustavo", 100, 10);
 $mago = new Mago("Aurora", 50, 10);
@@ -100,7 +117,10 @@ $personagens = [$guerreiros, $mago, $personagem];
 foreach($personagens as $p) {
     $p->atacar();
 
+
 }
+
+$curandeiro->curar($guerreiro, 50);
  
 // https:look.devlook.xyz/resources/views/projetos/pop.php
 
@@ -115,9 +135,6 @@ foreach($personagens as $p) {
 
 //4. O que significa extends?
 //Herdar características e métodos de outra classe
-
-
-
 
 ?>
 
