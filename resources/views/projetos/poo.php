@@ -122,8 +122,8 @@ foreach($personagens as $p) {
 
 $curandeiro->curar($guerreiro, 50);
  
-// https:look.devlook.xyz/resources/views/projetos/pop.php
-// https://gustavo315.devlook.xyz/resources/views/projetos/pop.php
+// https:look.devlook.xyz/resources/views/projetos/poo.php
+// https://gustavo315.devlook.xyz/resources/views/projetos/poo.php
 
 //1. O que é uma classe?
 //Um molde para criar objetos
