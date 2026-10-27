@@ -3,7 +3,7 @@
 class NotasController
 { 
     public function index() {
-        require __DIR__ . "/../../resources/views/notas.php";
+        require __DIR__ . "/../../../resources/views/notas.php";
     }
 
 
