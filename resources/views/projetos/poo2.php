@@ -132,7 +132,7 @@ function escapar($texto) {
         <h2>Funçaõ: Transportar peças</h2>
         <br>
         <p>
-        é um sistema mecânico contínuo usado para mover matérias-primas de um ponto a outro dentro de fábricas, armazéns e centros de logística.
+        <b>é um sistema mecânico contínuo usado para mover matérias-primas de um ponto a outro dentro de fábricas, armazéns e centros de logística.<b>
         <div class="tipos de Esteira">
         <br>
             <h3>TIPOS DE ESTEIRA</h3>
