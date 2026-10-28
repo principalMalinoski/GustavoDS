@@ -141,7 +141,7 @@ function escapar($texto) {
         <b>É um sistema mecânico contínuo usado para mover matérias-primas de um ponto a outro dentro de fábricas, armazéns e centros de logística.</b>
         <div class="tipos de Esteira">
         <br>
-            <h3>TIPOS DE ESTEIRA</h3>
+            <h3>PRINCIPAIS TIPOS DE ESTEIRA</h3>
             <span>Esteira metálica</span>
             <span>Esteira de corrente</span>
             <span>Esteira modular plástica</span>
@@ -153,7 +153,7 @@ function escapar($texto) {
         <b>Aplicar e controlar uma força intensa e precisa para cortar, dobrar, estampar, moldar, compactar ou montar peças.</b>
         <div class="tipos de Esteira">
         <br>
-            <h3>TIPOS DE PRENSA</h3>
+            <h3>PRINCIPAIS TIPOS DE PRENSA</h3>
             <span>Prensa Mecânica</span>
             <span>Prensa Excêntrica</span>
             <span>Prensa Hidráulica</span>
@@ -165,7 +165,7 @@ function escapar($texto) {
         <b>Automatizar o processo de união de peças metálicas em linhas de produção em massa</b>
         <div class="tipos de Solda">
         <br>
-            <h3>TIPOS DE ROBO SOLDA</h3>
+            <h3>PRINCIPAIS TIPOS DE ROBO SOLDA</h3>
             <span>Robôs Articulados (6 eixos)</span>
             <span>Robôs Colaborativos (Cobots)</span>
             <span>Robôs SCARA</span>
