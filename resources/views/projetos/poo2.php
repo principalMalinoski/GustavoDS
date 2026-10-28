@@ -135,41 +135,6 @@ function escapar($texto) {
         }
     </style>
 </head>
-<body>
-    
-<h2>Cadastro de Equipamento</h2>
-
-<form id="cadastro">
-    <label>Nome do equipamento:</label>
-    <input type="text" id="nome" required>
-    <br><br>
-
-    <label>Função:</label>
-    <input type="text" id="funcao" required>
-    <br><br>
-
-    <label>Tipo:</label>
-    <input type="text" id="tipo" required>
-    <br><br>
-
-    <button type="submit">Cadastrar</button>
-</form>
-
-<p id="mensagem"></p>
-
-<script>
-    document.getElementById("cadastro").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        let nome = document.getElementById("nome").value;
-
-        document.getElementById("mensagem").textContent =
-            "Equipamento " + nome + " cadastrado com sucesso!";
-
-        this.reset();
-    });
-</script>
-<body>
     
 <body>
 <div class="Esteira">
@@ -209,6 +174,40 @@ function escapar($texto) {
             <span>Robôs SCARA</span>
         </div>
 </body>
+    
+<h2>CADASTRO DE EQUIPAMENTOS</h2>
+
+<form id="cadastro">
+    <label>Nome do equipamento:</label>
+    <input type="text" id="nome" required>
+    <br><br>
+
+    <label>Função:</label>
+    <input type="text" id="funcao" required>
+    <br><br>
+
+    <label>Tipo:</label>
+    <input type="text" id="tipo" required>
+    <br><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<p id="mensagem"></p>
+
+<script>
+    document.getElementById("cadastro").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let nome = document.getElementById("nome").value;
+
+        document.getElementById("mensagem").textContent =
+            "Equipamento " + nome + " cadastrado com sucesso!";
+
+        this.reset();
+    });
+</script>
+<body>
 </html>
 
 
