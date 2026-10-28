@@ -116,10 +116,28 @@ function escapar($texto) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SISTEMA DE CONTROLE DE PRODUÇÃO INDUSTRIAL</title>
 </head>
 <body>
-    
+<div class="Esteira">
+        <h2 id="esteira">Esteira</h2>
+         <h3>Funçaõ: Transportar peças</h3>
+         <input type="text" id="esteira" name="esteira" required>
+        <form action="" method="POST"></form>
+
+        <div class="Prensa">
+            <label for="esteira">Prensa</label>
+            <input type="text" id="prensa" name="Prensa" required>
+            <h3>Função: Prensar peças</h3>
+        </div>
+
+        <div class="rodoSoldagem">
+                <label for="rodoSoldagem">Rodo de Soldage:</label>
+                <h3>Função: Soldar peças</h3>
+                <input type="text" id="rodoSoldagem" name="rodoSoldagem" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
 </body>
 </html>
 
