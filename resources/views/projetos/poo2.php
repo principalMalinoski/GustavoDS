@@ -120,23 +120,32 @@ function escapar($texto) {
 </head>
 <body>
 <div class="Esteira">
-        <h2 id="esteira">Esteira</h2>
-         <h3>Funçaõ: Transportar peças</h3>
-         <input type="text" id="esteira" name="esteira" required>
-        <form action="" method="POST"></form>
-
-        <div class="Prensa">
-            <label for="prensa">Prensa</label>
-            <h3>Função: Prensar peças</h3>
+        <h2>Funçaõ: Transportar peças</h2>
+        <p>
+        é um sistema mecânico contínuo usado para mover matérias-primas de um ponto a outro dentro de fábricas, armazéns e centros de logística.
+        <div class="tipos de Esteira">
+            <span>Esteira metálica</span>
+            <span>Esteira de corrente</span>
+            <span>Esteira modular plástica</span>
         </div>
-
-        <div class="rodoSoldagem">
-                <label for="rodoSoldagem">Rodo de Soldage:</label>
-                <h3>Função: Soldar peças</h3>
-                <input type="text" id="rodoSoldagem" name="rodoSoldagem" required>
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
+<div class="Prensa">
+        <h2>Funçaõ: Prensar peças</h2>
+        <p>
+        aplicar e controlar uma força intensa e precisa para cortar, dobrar, estampar, moldar, compactar ou montar peças.
+        <div class="tipos de Esteira">
+            <span>Prensa Mecânica</span>
+            <span>Prensa Excêntrica</span>
+            <span>Prensa Hidráulica</span>
+        </div>
+<div class="rodoSoldagem">
+        <h2>Funçaõ: Soldar peças</h2>
+        <p>
+        automatizar o processo de união de peças metálicas em linhas de produção em massa
+        <div class="tipos de Solda">
+            <span>Solda por Resistência</span>
+            <span>Feixe de Elétrons e Laser</span>
+            <span>Arco de Plasma (PAW)</span>
+        </div>
 </body>
 </html>
 
