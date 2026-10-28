@@ -126,8 +126,7 @@ function escapar($texto) {
         <form action="" method="POST"></form>
 
         <div class="Prensa">
-            <label for="esteira">Prensa</label>
-            <input type="text" id="prensa" name="Prensa" required>
+            <label for="prensa">Prensa</label>
             <h3>Função: Prensar peças</h3>
         </div>
 
