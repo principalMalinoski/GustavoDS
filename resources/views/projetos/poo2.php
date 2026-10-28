@@ -6,9 +6,7 @@
 // 1. CLASSE ABSTRATA
 abstract class Maquina {
     public $nome;
-    private $produção;
-
-
+    private $producao;
 
     public function __construct($nome)
     {
@@ -51,7 +49,7 @@ class Prensa extends Maquina {
     }
 }
 
-class RodoSoldagem extends Maquina {
+class RoboSoldagem extends Maquina {
     public function operar() {
         return "Soldando peças...";
     }
@@ -86,8 +84,8 @@ if ($tipo === "esteira") {
     $maquina = new Esteira($nome);
 } elseif ($tipo === "prensa") {
     $maquina = new Prensa($nome);
-} elseif ($tipo === "rodoSoldagem") {
-    $maquina = new RodoSoldagem($nome); 
+} elseif ($tipo === "roboSoldagem") {
+    $maquina = new RoboSoldagem($nome); 
 }
  
 // EXECUTANDO OS MÉTODOS DO OBJETO
@@ -130,6 +128,7 @@ function escapar($texto) {
 </head>
 <body>
 <div class="Esteira">
+        <h1>ESTEIRA</h1>
         <h2>Funçaõ: Transportar peças</h2>
         <p>
         é um sistema mecânico contínuo usado para mover matérias-primas de um ponto a outro dentro de fábricas, armazéns e centros de logística.
@@ -139,6 +138,7 @@ function escapar($texto) {
             <span>Esteira modular plástica</span>
         </div>
 <div class="Prensa">
+        <h1>PRENSA</h1>
         <h2>Funçaõ: Prensar peças</h2>
         <p>
         aplicar e controlar uma força intensa e precisa para cortar, dobrar, estampar, moldar, compactar ou montar peças.
@@ -147,7 +147,8 @@ function escapar($texto) {
             <span>Prensa Excêntrica</span>
             <span>Prensa Hidráulica</span>
         </div>
-<div class="rodoSoldagem">
+<div class="roboSoldagem">
+        <h1>ROBO DE SOLDAGEM</h1>
         <h2>Funçaõ: Soldar peças</h2>
         <p>
         automatizar o processo de união de peças metálicas em linhas de produção em massa
