@@ -117,6 +117,16 @@ function escapar($texto) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISTEMA DE CONTROLE DE PRODUÇÃO INDUSTRIAL</title>
+    <style>
+        span {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightblue;
+            border: 1px solid steelblue;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 <div class="Esteira">
@@ -165,4 +175,3 @@ function escapar($texto) {
 
 
 
-?>
