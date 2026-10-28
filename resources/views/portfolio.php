@@ -217,7 +217,7 @@
         </div>
         <h3>Principais elementos usados na indústria</h3>
         <p>
-            Ferramentas que ajudam a indústria em precisão e qualidade
+            Ferramentas que ajudam a indústria em controle, precisão e qualidade de peças
         <div class="tecnologias">
             <span>HTML</span>
             <span>CSS</span>
