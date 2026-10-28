@@ -164,7 +164,7 @@ function escapar($texto) {
         <h1>ROBO DE SOLDAGEM</h1>
         <h2>Funçaõ: Soldar peças</h2>
         <br>
-        <b>Automatizar o processo de união de peças metálicas em linhas de produção em massa</b>
+        <b>Automatizar o processo de união de peças metálicas em linhas de produção em massa.</b>
         <div class="tipos de Solda">
         <br>
             <h3>PRINCIPAIS TIPOS DE ROBO SOLDA</h3>

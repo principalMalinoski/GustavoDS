@@ -210,6 +210,23 @@
             ver projeto ->
         </a>
     </div>
+    </div>
+     <!-- PROJETO 7 -->
+     <div class="sistema-de-controle">
+                07
+        </div>
+        <h3>Principais elementos usados na indústria</h3>
+        <p>
+            Ferramentas que ajudam a indústria em precisão e qualidade
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP</span>
+        </div>
+        <a href="/index.php?rotas=poo" class="link-projeto">
+            ver projeto ->
+        </a>
+    </div>
     </section>
     <section id="contato" class="secao secao-destaque">
         <h2 class="titulo-secao">Contato</h2>
