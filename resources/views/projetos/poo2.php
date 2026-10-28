@@ -178,15 +178,15 @@ function escapar($texto) {
 <h2>CADASTRO DE EQUIPAMENTOS</h2>
 
 <form id="cadastro">
-    <label>Nome do equipamento:</label>
+    <label>NOME DO EQUIPAMENTO:</label>
     <input type="text" id="nome" required>
     <br><br>
 
-    <label>Função:</label>
+    <label>FUNÇÃO:</label>
     <input type="text" id="funcao" required>
     <br><br>
 
-    <label>Tipo:</label>
+    <label>TIPO:</label>
     <input type="text" id="tipo" required>
     <br><br>
 
