@@ -117,7 +117,7 @@ function escapar($texto) {
     <title>SISTEMA DE CONTROLE DE PRODUÇÃO INDUSTRIAL</title>
     <style>
     body {
-        background-color: #DEE2E6 rgb(222, 226, 230);
+        background-color: lightgray;
     }
         span {
             display: inline-block;
