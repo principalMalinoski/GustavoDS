@@ -128,7 +128,7 @@ function escapar($texto) {
             color: blue;
         }
         h2 {
-            color: gray;
+            color: MediumBlue;
         }
 
     </style>
