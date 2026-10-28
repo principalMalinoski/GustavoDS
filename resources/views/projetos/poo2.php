@@ -110,14 +110,14 @@ function escapar($texto) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISTEMA DE CONTROLE DE PRODUÇÃO INDUSTRIAL</title>
     <style>
     body {
-        background-color: grey;
+        background-color: #F8F9FA rgb(248, 249, 250);
     }
         span {
             display: inline-block;
