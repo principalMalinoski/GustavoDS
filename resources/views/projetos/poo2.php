@@ -116,6 +116,9 @@ function escapar($texto) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISTEMA DE CONTROLE DE PRODUÇÃO INDUSTRIAL</title>
     <style>
+    body {
+        background-color: grey;
+    }
         span {
             display: inline-block;
             padding: 10px;
@@ -130,7 +133,6 @@ function escapar($texto) {
         h2 {
             color: MediumBlue;
         }
-
     </style>
 </head>
 <body>
