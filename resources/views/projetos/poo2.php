@@ -136,9 +136,45 @@ function escapar($texto) {
     </style>
 </head>
 <body>
+    
+<h2>Cadastro de Equipamento</h2>
+
+<form id="cadastro">
+    <label>Nome do equipamento:</label>
+    <input type="text" id="nome" required>
+    <br><br>
+
+    <label>Função:</label>
+    <input type="text" id="funcao" required>
+    <br><br>
+
+    <label>Tipo:</label>
+    <input type="text" id="tipo" required>
+    <br><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<p id="mensagem"></p>
+
+<script>
+    document.getElementById("cadastro").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let nome = document.getElementById("nome").value;
+
+        document.getElementById("mensagem").textContent =
+            "Equipamento " + nome + " cadastrado com sucesso!";
+
+        this.reset();
+    });
+</script>
+<body>
+    
+<body>
 <div class="Esteira">
         <h1>ESTEIRA</h1>
-        <h2>Funçaõ: TRANSPORTAR PEÇAS</h2>
+        <h2>Função: TRANSPORTAR PEÇAS</h2>
         <br>
         <b>É um sistema mecânico contínuo usado para mover matérias-primas de um ponto a outro dentro de fábricas, armazéns e centros de logística.</b>
         <div class="tipos de Esteira">
@@ -150,7 +186,7 @@ function escapar($texto) {
         </div>
 <div class="Prensa">
         <h1>PRENSA</h1>
-        <h2>Funçaõ: PRENSAR PEÇAS</h2>
+        <h2>Função: PRENSAR PEÇAS</h2>
         <br>
         <b>Aplicar e controlar uma força intensa e precisa para cortar, dobrar, estampar, moldar, compactar ou montar peças.</b>
         <div class="tipos de Esteira">
@@ -162,7 +198,7 @@ function escapar($texto) {
         </div>
 <div class="roboSoldagem">
         <h1>ROBO DE SOLDAGEM</h1>
-        <h2>Funçaõ: SOLDAR PEÇAS</h2>
+        <h2>Função: SOLDAR PEÇAS</h2>
         <br>
         <b>Automatizar o processo de união de peças metálicas em linhas de produção em massa.</b>
         <div class="tipos de Solda">

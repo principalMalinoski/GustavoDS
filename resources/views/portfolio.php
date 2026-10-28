@@ -205,6 +205,7 @@
             <span>HTML</span>
             <span>CSS</span>
             <span>PHP</span>
+            
         </div>
         <a href="/index.php?rotas=helpdesk" class="link-projeto">
             ver projeto ->
@@ -222,6 +223,7 @@
             <span>HTML</span>
             <span>CSS</span>
             <span>PHP</span>
+            <span>JAVA</span>
         </div>
         <a href="/index.php?rotas=poo" class="link-projeto">
             ver projeto ->
