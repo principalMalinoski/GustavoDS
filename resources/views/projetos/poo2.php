@@ -158,10 +158,10 @@ function escapar($texto) {
         <b>Automatizar o processo de união de peças metálicas em linhas de produção em massa</b>
         <div class="tipos de Solda">
         <br>
-            <h3>TIPOS DE SOLDA</h3>
-            <span>Solda por Resistência</span>
-            <span>Feixe de Elétrons e Laser</span>
-            <span>Arco de Plasma (PAW)</span>
+            <h3>TIPOS DE ROBO SOLDA</h3>
+            <span>Robôs Articulados (6 eixos)</span>
+            <span>Robôs Colaborativos (Cobots)</span>
+            <span>Robôs SCARA</span>
         </div>
 </body>
 </html>
