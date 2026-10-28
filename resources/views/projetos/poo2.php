@@ -125,12 +125,12 @@ function escapar($texto) {
             border-radius: 5px;
         }
         h1 {
-            color: greenyellow;
+            color: blue;
         }
         h2 {
             color: gray;
         }
-        
+
     </style>
 </head>
 <body>
