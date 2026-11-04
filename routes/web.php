@@ -7,10 +7,6 @@
     // require_once __DIR__ . '/../app/Http/Controllers/JsonController.php';
     // require_once __DIR__ . '/../app/Http/Controllers/JogosController.php';
     
-
-
-
-
     return [
       'GET' =>  [
             'portfolio' => [new PortfolioController(), 'index'],
