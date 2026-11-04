@@ -1,0 +1,25 @@
+[   
+    {
+        "nome": "Gustavo",
+        "idade": 17,
+        "curso": "Desenvolvimento de Sistemas",
+        "notas": {
+            "portugues": {
+                "prova1": 10,
+                "prova2": 6,
+                "prova3": 7
+
+            }
+        }
+    },
+    {
+        "nome": "Ana",
+        "idade": 18,
+        "curso":"Administração"
+    },
+    {
+        "nome": "João",
+        "idade": 12,
+        "curso":"Administração"
+    }
+]

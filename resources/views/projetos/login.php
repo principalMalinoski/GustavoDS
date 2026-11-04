@@ -1,0 +1,69 @@
+<?php
+$usuarioCorreto = "admin";
+$senhaCorreta = "12345";
+
+$mensagem = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuario = $_POST["usuario"];
+    $senha = $_POST["senha"];
+
+    if ($usuario === $usuarioCorreto && $senha === $senhaCorreta) {
+        $mensagem = "Login realizado com sucesso";
+    } else {
+        $mensagem = "Usuário ou senha incorretos";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login">
+        <h2 id="titulo">Login</h2>
+
+        <form action="" method="POST"></form>
+
+        <div class="campo">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+        </div>
+
+        <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <?php if ($mensagem != ""): ?>
+            <div class="mensagem">
+                <?php echo $mensagem; ?>
+            </div>
+        <?php endif; ?> 
+        
+        </form>
+        <!-- Sua principal função é exibir uma mensagem na tela apenas se ela não estiver vazia -->
+    
+    </div>
+
+</body>
+
+<!-- Para testar com GET, altere:
+<form method="POST" action="">
+
+para:
+<form method="GET" action="">
+
+E altere também:
+$_POST["usuario"] para $_GET["usuario"]
+$_POST["senha"] para $_GET["senha"] -->
+
+</html>
+
