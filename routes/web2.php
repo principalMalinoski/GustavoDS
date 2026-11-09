@@ -5,7 +5,9 @@ require __DIR__ . '/../app/Http/Controllers/JogosController.php';
 require __DIR__ . '/../app/Http/Controllers/IdadeController.php';
 require __DIR__ . '/../app/Http/Controllers/NotasController.php';
 require __DIR__ . '/../app/Http/Controllers/HelpdeskController.php';
+require __DIR__ . '/../app/Http/Controllers/LoginController.php';
 require __DIR__ . '/../app/Http/Controllers/Poo2Controller.php';
+
 
 // Rotas do sistema
 return [
