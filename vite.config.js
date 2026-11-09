@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
@@ -7,7 +6,12 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/css/index.css', 'resources/css/layout.css'],
+            input: ['resources/css/app.css',
+                'resources/css/style.css',
+                'resources/css/index.css',
+                'resources/css/login.css',
+                'resources/css/layout.css',
+                'resources/js/app.js'], 
             refresh: true,
             fonts: [
                 bunny('Instrument Sans', {
@@ -23,5 +27,3 @@ export default defineConfig({
         },
     },
 });
-
-
