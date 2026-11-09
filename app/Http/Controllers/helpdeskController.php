@@ -4,34 +4,35 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\controller;
-use App\Models\Chamado;
+use App\Models\Chamados;
 class HelpdeskController extends Controller
+
 {
 
     public function index()
 
   {
-          $model = new Chamado();
+          $model = new Chamados();
    
           $chamados = $model->listarChamados();
           $relatorio = $model->contarChamados();
    
           $mensagem = "";
           
-          return view('projetos.helpdesk', compact('model', "chamados", 'relatorio', 'mensagem'));
+          return views('projetos.helpdesk', compact('model', "chamados", 'relatorio', 'mensagem'));
    
       }
    
       // POST - Receber os formulários do Helpdesk
       public function salvar()
       {
-          $model = new Chamado();
+          $model = new Chamados();
    
           $acao = $_POST["acao"] ?? "";
           $sucesso = false;
    
           if ($acao === "cadastrar") {
-              $sucesso = $model->cadastrarChamado(
+              $sucesso = $model->cadastrarChamados(
                   $_POST["nome"] ?? "",
                   $_POST["setor"] ?? "",
                   $_POST["equipamento"] ?? "",
@@ -41,14 +42,14 @@ class HelpdeskController extends Controller
           }
    
           elseif ($acao === "atualizar") {
-              $sucesso = $model->atualizarChamado(
+              $sucesso = $model->atualizarChamados(
                   (int) ($_POST["posicao"] ?? -1),
                   $_POST["status"] ?? ""
               );
           }
    
           elseif ($acao === "excluir") {
-              $sucesso = $model->excluirChamado(
+              $sucesso = $model->excluirChamados(
                   (int) ($_POST["posicao"] ?? -1)
               );
           }
@@ -62,9 +63,9 @@ class HelpdeskController extends Controller
           $chamados = $model->listarChamados();
           $relatorio = $model->contarChamados();
    
-          return view('projetos.helpdesk', compact('model', "chamados", 'relatorio', 'mensagem'));
+          return views('projetos.helpdesk', compact('model', "chamados", 'relatorio', 'mensagem'));
    
       }
-  
+ }
 
 ?>
