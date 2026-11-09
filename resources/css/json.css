@@ -1,0 +1,142 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* FUNDO */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b);
+    color: #f8fafc;
+    padding: 40px 20px;
+}
+
+/* TÍTULOS */
+h2 {
+    color: #a78bfa;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#titulo {
+    color: #c4b5fd;
+}
+
+/* FORMULÁRIOS */
+form {
+    background: #1e293b;
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #475569;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* CAMPOS */
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: #c4b5fd;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.35);
+}
+
+/* BOTÕES */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #7c3aed, #4f46e5);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4);
+}
+
+/* ÁREA DE ALUNOS */
+body > h2 {
+    margin-top: 45px;
+}
+
+h3 {
+    color: #a78bfa;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* CARDS DOS ALUNOS */
+body > h3 {
+    max-width: 450px;
+    margin: 20px auto 0;
+    padding: 20px 20px 5px;
+    background: #1e293b;
+    border-radius: 12px 12px 0 0;
+    border-top: 3px solid #8b5cf6;
+}
+
+body > p {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+body > p:last-of-type {
+    padding-bottom: 20px;
+    border-radius: 0 0 12px 12px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

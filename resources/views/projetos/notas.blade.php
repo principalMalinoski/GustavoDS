@@ -55,6 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Situação Final do Aluno (POST)</title>
+    @vite(['resources/css/notas.css'])
 </head>
 <body>
     <h1>Cadastro de Aluno</h1>

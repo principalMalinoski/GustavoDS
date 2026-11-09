@@ -86,7 +86,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>json</title>
+    <title>Json</title>
+    @vite(['resources/css/json.css'])
 </head>
 <body>
     <div class="Formulário">

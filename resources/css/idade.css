@@ -1,0 +1,121 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #f8fafc;
+}
+
+/* TÍTULO */
+h2 {
+    color: #a78bfa;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* FORMULÁRIO */
+form {
+    background: #1e293b;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #475569;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABELS */
+label {
+    color: #c4b5fd;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+/* CAMPOS */
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.35);
+}
+
+/* BOTÃO */
+button {
+    margin-top: 25px;
+    padding: 14px;
+    background: linear-gradient(90deg, #7c3aed, #4f46e5);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4);
+}
+
+body > p {
+    width: 100%;
+    max-width: 420px;
+    background: #1e293b;
+    padding: 15px 20px;
+    margin-top: 12px;
+    border-left: 4px solid #8b5cf6;
+    border-radius: 8px;
+    color: #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body > p:first-of-type {
+    margin-top: 30px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    form {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}

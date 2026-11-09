@@ -15,8 +15,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Layout de atividades | Meu Portfólio</title>
-    <!-- CSS GERAL DO PORTFÓLIO -->
-    <link rel="stylesheet" href="../css/layout.css">
+    @vite(['resources/css/layout.css'])
 </head>
 <body>
     <!-- CABEÇALHO -->

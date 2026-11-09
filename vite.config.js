@@ -11,6 +11,10 @@ export default defineConfig({
                 'resources/css/index.css',
                 'resources/css/login.css',
                 'resources/css/layout.css',
+                'resources/css/notas.css',
+                'resources/css/json.css',
+                'resources/css/idade.css',
+                'resources/css/jogos.php',
                 'resources/js/app.js'], 
             refresh: true,
             fonts: [
