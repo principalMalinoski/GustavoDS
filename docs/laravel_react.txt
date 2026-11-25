@@ -21,3 +21,9 @@ npm list react react-dom @inertiajs/react vite.
 LARAVEL: Backend | React: Frontend
 INERTIA: Ponte entre back e front
 VITE: Processamento e compilação do frontend
+
+git add .
+git commit -m "Atualizar o Projeto DS"
+git config user.email "@seu.email"
+git config user.name "seu_nome_no_github"
+git push origin main
