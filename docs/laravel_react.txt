@@ -1,0 +1,23 @@
+php artisan --
+node -v
+npm -v
+npm list vite
+
+npm install react@^19 react-dom@^19
+.
+npm install @inertiajs/react@^2
+.
+npm install -D @vitejs/plugin-react@^5
+.
+mkdir -p resources/js/Pages
+mkdir -p resources/js/Complements
+mkdir -p resources/js/Layouts
+ls resources/js
+composer show inertiajs/inertia-laravel
+.
+npm list react react-dom @inertiajs/react vite.
+.
+(Importante)
+LARAVEL: Backend | React: Frontend
+INERTIA: Ponte entre back e front
+VITE: Processamento e compilação do frontend
